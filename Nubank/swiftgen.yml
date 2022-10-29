@@ -1,0 +1,29 @@
+input_dir: Nubank/Sources/
+output_dir: Nubank/Generated/
+
+## XCAssets
+xcassets:
+  inputs:
+    - Assets.xcassets
+    - Colors.xcassets
+  outputs:
+    templateName: swift5
+    params:
+      forceProvidesNamespaces: true
+      forceFileNameEnum: true
+    output: XCAssets+Generated.swift
+    
+## Strings
+strings:
+  inputs:
+    - pt-br.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+        enumName: Strings
+      output: Strings+Generated.swift
+
+##
+## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
+## https://github.com/SwiftGen/SwiftGen/tree/6.6.2/Documentation/
