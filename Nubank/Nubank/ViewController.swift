@@ -15,6 +15,4 @@ class HomeViewController: UIViewController {
         print("View controller")
     }
 
-
 }
-
