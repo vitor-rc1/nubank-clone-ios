@@ -16,18 +16,22 @@ final class TabBarController {
         }
     }
 
+    private let tabViewControllers: [UIViewController]
+
     // MARK: Delegates
 
     weak var delegate: TabBarDelegateProtocol?
 
+    // MARK: Inits
+
+    init(tabViewControllers: [UIViewController]) {
+        self.tabViewControllers = tabViewControllers
+    }
+
     // MARK: Private methods
 
     private func setSelectedTabViewController() {
-        let viewController = UIViewController()
-        let view = UIView()
-        view.backgroundColor = selectedTab == 0 ? .green : .blue
-        viewController.view = view
-        delegate?.selectedTabViewController(tabViewController: viewController)
+        delegate?.selectedTabViewController(tabViewController: tabViewControllers[selectedTab])
     }
 
 }

@@ -16,15 +16,15 @@ final class TabBarConfigurator: SceneFactoryProtocol {
         ]
 
         var tabBarItems: [UITabBarItem] = []
-        var navigationControllers: [UINavigationController] = []
+        var tabNavigationControllers: [UINavigationController] = []
 
         for tabBarPage in tabBarPages {
             tabBarItems.append(tabBarPage.tabBarItem)
-            navigationControllers.append(tabBarPage.navigationController)
+            tabNavigationControllers.append(tabBarPage.navigationController)
         }
 
         let tabBarView = TabBarView(tabBarItems: tabBarItems)
-        let controller = TabBarController()
+        let controller = TabBarController(tabViewControllers: tabNavigationControllers)
         let tabBarViewController = TabBarViewController(tabBarView: tabBarView, controller: controller)
         tabBarView.tabBar.delegate = tabBarViewController
         controller.delegate = tabBarViewController
