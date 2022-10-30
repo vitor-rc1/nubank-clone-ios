@@ -12,7 +12,6 @@
 		1E258857290D60DE00822A7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258856290D60DE00822A7C /* TabBarViewController.swift */; };
 		1E25885C290D60DF00822A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885B290D60DF00822A7C /* Assets.xcassets */; };
 		1E25885F290D60DF00822A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885D290D60DF00822A7C /* LaunchScreen.storyboard */; };
-		1E25886A290D60DF00822A7C /* NubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258869290D60DF00822A7C /* NubankTests.swift */; };
 		1E8B2CD1290D6C01002C8AF2 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD0290D6C01002C8AF2 /* swiftgen.yml */; };
 		1E8B2CD5290D6EDA002C8AF2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD4290D6EDA002C8AF2 /* Colors.xcassets */; };
 		1E8B2CD8290D7308002C8AF2 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */; };
@@ -48,7 +47,6 @@
 		1E25885E290D60DF00822A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E258860290D60DF00822A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E258865290D60DF00822A7C /* NubankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E258869290D60DF00822A7C /* NubankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NubankTests.swift; sourceTree = "<group>"; };
 		1E8B2CD0290D6C01002C8AF2 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		1E8B2CD4290D6EDA002C8AF2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
@@ -123,9 +121,32 @@
 		1E258868290D60DF00822A7C /* NubankTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E258869290D60DF00822A7C /* NubankTests.swift */,
+				1E82F78C290F00FF00F7E5CB /* Screens */,
 			);
 			path = NubankTests;
+			sourceTree = "<group>";
+		};
+		1E82F78C290F00FF00F7E5CB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1E82F78E290F010C00F7E5CB /* TabBar */,
+				1E82F78D290F010600F7E5CB /* Commons */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1E82F78D290F010600F7E5CB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1E82F78E290F010C00F7E5CB /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		1E8B2CD3290D6EAB002C8AF2 /* Sources */ = {
@@ -434,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E25886A290D60DF00822A7C /* NubankTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

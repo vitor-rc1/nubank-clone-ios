@@ -10,12 +10,11 @@ import UIKit
 final class TabBarView: UIView {
     // MARK: Private properties
 
-    private lazy var tabBar: UITabBar = {
+    private(set) lazy var tabBar: UITabBar = {
         let tabBar = UITabBar()
         tabBar.translatesAutoresizingMaskIntoConstraints = false
         let tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
         let tabBarItem2 = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-
         tabBar.setItems([tabBarItem, tabBarItem2], animated: false)
         tabBar.selectedItem = tabBarItem
         return tabBar
@@ -36,7 +35,6 @@ final class TabBarView: UIView {
 
     private lazy var contenView: UIView = {
         let contenView = UIView()
-        contenView.backgroundColor = UIColor(asset: Asset.Colors.nuGray1)
         contenView.translatesAutoresizingMaskIntoConstraints = false
         return contenView
     }()
@@ -51,11 +49,20 @@ final class TabBarView: UIView {
     }
 }
 
+extension TabBarView: TabaBarViewProtocol {
+    func setContentView(with view: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        contenView.removeFromSuperview()
+        contenView = view
+        scrollView.addSubview(contenView)
+        setupContenViewConstraints()
+    }
+}
+
 extension TabBarView: ViewCode {
 
     func buildViewHierarch() {
         scrollView.addSubview(header)
-        scrollView.addSubview(contenView)
 
         addSubview(tabBar)
         addSubview(scrollView)
@@ -65,7 +72,6 @@ extension TabBarView: ViewCode {
         setupTabBarConstraints()
         setupScrollViewConstraints()
         setupHeaderConstraints()
-        setupContenViewConstraints()
     }
 
     func additionalConfiguration() {

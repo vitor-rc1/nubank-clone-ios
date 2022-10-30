@@ -7,12 +7,14 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+final class TabBarViewController: UIViewController {
 
-    private let tabBarView: TabBarView
+    private let tabBarView: UIView & TabaBarViewProtocol
+    private let controller: TabBarControllerProtocol
 
-    init(tabBarView: TabBarView) {
+    init(tabBarView: UIView & TabaBarViewProtocol, controller: TabBarControllerProtocol) {
         self.tabBarView = tabBarView
+        self.controller = controller
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -26,5 +28,18 @@ class TabBarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        controller.viewDidLoad()
+    }
+}
+
+extension TabBarViewController: TabBarDelegateProtocol {
+    func selectedTabViewController(tabViewController: UIViewController) {
+        tabBarView.setContentView(with: tabViewController.view)
+    }
+}
+
+extension TabBarViewController: UITabBarDelegate {
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        controller.didSelectTabBarItem(tag: item.tag)
     }
 }
