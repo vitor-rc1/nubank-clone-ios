@@ -9,8 +9,9 @@ import UIKit
 
 final class TabBarConfigurator: SceneFactoryProtocol {
     func createScene() -> UIViewController {
-        let homeViewController = TabBarViewController()
+        let tabBarView = TabBarView()
+        let tabBarViewController = TabBarViewController(tabBarView: tabBarView)
 
-        return homeViewController
+        return tabBarViewController
     }
 }
