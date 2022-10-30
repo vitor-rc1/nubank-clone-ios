@@ -9,7 +9,21 @@ import UIKit
 
 final class TabBarConfigurator: SceneFactoryProtocol {
     func createScene() -> UIViewController {
-        let tabBarView = TabBarView()
+        let tabBarPages: [TabBarPagesEnum] = [
+            .home,
+            .investments,
+            .cashback
+        ]
+
+        var tabBarItems: [UITabBarItem] = []
+        var navigationControllers: [UINavigationController] = []
+
+        for tabBarPage in tabBarPages {
+            tabBarItems.append(tabBarPage.tabBarItem)
+            navigationControllers.append(tabBarPage.navigationController)
+        }
+
+        let tabBarView = TabBarView(tabBarItems: tabBarItems)
         let controller = TabBarController()
         let tabBarViewController = TabBarViewController(tabBarView: tabBarView, controller: controller)
         tabBarView.tabBar.delegate = tabBarViewController

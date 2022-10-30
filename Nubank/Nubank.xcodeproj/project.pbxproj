@@ -12,6 +12,7 @@
 		1E258857290D60DE00822A7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258856290D60DE00822A7C /* TabBarViewController.swift */; };
 		1E25885C290D60DF00822A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885B290D60DF00822A7C /* Assets.xcassets */; };
 		1E25885F290D60DF00822A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885D290D60DF00822A7C /* LaunchScreen.storyboard */; };
+		1E82F791290F0F2900F7E5CB /* TabBarPagesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82F790290F0F2900F7E5CB /* TabBarPagesEnum.swift */; };
 		1E8B2CD1290D6C01002C8AF2 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD0290D6C01002C8AF2 /* swiftgen.yml */; };
 		1E8B2CD5290D6EDA002C8AF2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD4290D6EDA002C8AF2 /* Colors.xcassets */; };
 		1E8B2CD8290D7308002C8AF2 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */; };
@@ -47,6 +48,7 @@
 		1E25885E290D60DF00822A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E258860290D60DF00822A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E258865290D60DF00822A7C /* NubankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NubankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E82F790290F0F2900F7E5CB /* TabBarPagesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPagesEnum.swift; sourceTree = "<group>"; };
 		1E8B2CD0290D6C01002C8AF2 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		1E8B2CD4290D6EDA002C8AF2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		1E82F78F290F0F1100F7E5CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E82F790290F0F2900F7E5CB /* TabBarPagesEnum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1E8B2CD3290D6EAB002C8AF2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 				1E8B2CF2290DA5D8002C8AF2 /* TabBarProtocols.swift */,
 				1E8B2CF0290DA5BD002C8AF2 /* TabBarView.swift */,
 				1E258856290D60DE00822A7C /* TabBarViewController.swift */,
+				1E82F78F290F0F1100F7E5CB /* Models */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -439,6 +450,7 @@
 			files = (
 				1E8B2CE0290D7795002C8AF2 /* Strings+Generated.swift in Sources */,
 				1E8B2CF3290DA5D8002C8AF2 /* TabBarProtocols.swift in Sources */,
+				1E82F791290F0F2900F7E5CB /* TabBarPagesEnum.swift in Sources */,
 				1E8B2CED290DA159002C8AF2 /* SceneFactoryProtocol.swift in Sources */,
 				1E8B2CEF290DA3C4002C8AF2 /* ViewCode.swift in Sources */,
 				1E258857290D60DE00822A7C /* TabBarViewController.swift in Sources */,

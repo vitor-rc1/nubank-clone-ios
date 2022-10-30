@@ -13,10 +13,6 @@ final class TabBarView: UIView {
     private(set) lazy var tabBar: UITabBar = {
         let tabBar = UITabBar()
         tabBar.translatesAutoresizingMaskIntoConstraints = false
-        let tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 0)
-        let tabBarItem2 = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-        tabBar.setItems([tabBarItem, tabBarItem2], animated: false)
-        tabBar.selectedItem = tabBarItem
         return tabBar
     }()
 
@@ -39,13 +35,26 @@ final class TabBarView: UIView {
         return contenView
     }()
 
-    init() {
+    private let tabBarItems: [UITabBarItem]
+
+    init(tabBarItems: [UITabBarItem]) {
+        self.tabBarItems = tabBarItems
         super.init(frame: .zero)
         setupView()
+        setTabBarItems()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    private func setTabBarItems() {
+        guard let firsItem = tabBarItems.first else {
+            return
+        }
+
+        tabBar.setItems(tabBarItems, animated: false)
+        tabBar.selectedItem = firsItem
     }
 }
 
@@ -107,8 +116,7 @@ extension TabBarView: ViewCode {
         NSLayoutConstraint.activate([
             contenView.topAnchor.constraint(equalTo: header.bottomAnchor),
             contenView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            contenView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            contenView.heightAnchor.constraint(equalToConstant: 1000)
+            contenView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
     }
 }
