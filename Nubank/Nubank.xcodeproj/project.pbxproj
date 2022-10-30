@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E258853290D60DE00822A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258852290D60DE00822A7C /* AppDelegate.swift */; };
 		1E258855290D60DE00822A7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258854290D60DE00822A7C /* SceneDelegate.swift */; };
-		1E258857290D60DE00822A7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258856290D60DE00822A7C /* HomeViewController.swift */; };
+		1E258857290D60DE00822A7C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258856290D60DE00822A7C /* TabBarViewController.swift */; };
 		1E25885C290D60DF00822A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885B290D60DF00822A7C /* Assets.xcassets */; };
 		1E25885F290D60DF00822A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E25885D290D60DF00822A7C /* LaunchScreen.storyboard */; };
 		1E25886A290D60DF00822A7C /* NubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E258869290D60DF00822A7C /* NubankTests.swift */; };
@@ -18,6 +18,12 @@
 		1E8B2CD8290D7308002C8AF2 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */; };
 		1E8B2CDE290D775D002C8AF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E8B2CDC290D775D002C8AF2 /* Localizable.strings */; };
 		1E8B2CE0290D7795002C8AF2 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CDF290D7795002C8AF2 /* Strings+Generated.swift */; };
+		1E8B2CE7290DA0C7002C8AF2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CE6290DA0C7002C8AF2 /* TabBarController.swift */; };
+		1E8B2CE9290DA11A002C8AF2 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CE8290DA11A002C8AF2 /* TabBarConfigurator.swift */; };
+		1E8B2CED290DA159002C8AF2 /* SceneFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CEC290DA159002C8AF2 /* SceneFactoryProtocol.swift */; };
+		1E8B2CEF290DA3C4002C8AF2 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CEE290DA3C4002C8AF2 /* ViewCode.swift */; };
+		1E8B2CF1290DA5BD002C8AF2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CF0290DA5BD002C8AF2 /* TabBarView.swift */; };
+		1E8B2CF3290DA5D8002C8AF2 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8B2CF2290DA5D8002C8AF2 /* TabBarProtocols.swift */; };
 		27B037E685CA10B8C089A819 /* Pods_Nubank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130AF0A35D9A53CEEC623E16 /* Pods_Nubank.framework */; };
 		293670B07C26CD27DA4588D2 /* Pods_NubankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2E364C52E3989A6F7529F7 /* Pods_NubankTests.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +43,7 @@
 		1E25884F290D60DE00822A7C /* Nubank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nubank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E258852290D60DE00822A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E258854290D60DE00822A7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E258856290D60DE00822A7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1E258856290D60DE00822A7C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		1E25885B290D60DF00822A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E25885E290D60DF00822A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E258860290D60DF00822A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +54,12 @@
 		1E8B2CD7290D7308002C8AF2 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		1E8B2CDD290D775D002C8AF2 /* pt-br */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-br"; path = Localizable.strings; sourceTree = "<group>"; };
 		1E8B2CDF290D7795002C8AF2 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		1E8B2CE6290DA0C7002C8AF2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1E8B2CE8290DA11A002C8AF2 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		1E8B2CEC290DA159002C8AF2 /* SceneFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactoryProtocol.swift; sourceTree = "<group>"; };
+		1E8B2CEE290DA3C4002C8AF2 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		1E8B2CF0290DA5BD002C8AF2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1E8B2CF2290DA5D8002C8AF2 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		32B9015D20A857C20E57D3B3 /* Pods-NubankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.debug.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3774860613A0295F7F408560 /* Pods-Nubank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nubank.debug.xcconfig"; path = "Target Support Files/Pods-Nubank/Pods-Nubank.debug.xcconfig"; sourceTree = "<group>"; };
 		3F9F094E16F8C6FD97880671 /* Pods-NubankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.release.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,17 +168,39 @@
 		1E8B2CE2290D787B002C8AF2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1E8B2CE3290D7881002C8AF2 /* Home */,
+				1E8B2CEA290DA13C002C8AF2 /* Commons */,
+				1E8B2CE3290D7881002C8AF2 /* TabBar */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		1E8B2CE3290D7881002C8AF2 /* Home */ = {
+		1E8B2CE3290D7881002C8AF2 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				1E258856290D60DE00822A7C /* HomeViewController.swift */,
+				1E8B2CE8290DA11A002C8AF2 /* TabBarConfigurator.swift */,
+				1E8B2CE6290DA0C7002C8AF2 /* TabBarController.swift */,
+				1E8B2CF2290DA5D8002C8AF2 /* TabBarProtocols.swift */,
+				1E8B2CF0290DA5BD002C8AF2 /* TabBarView.swift */,
+				1E258856290D60DE00822A7C /* TabBarViewController.swift */,
 			);
-			path = Home;
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1E8B2CEA290DA13C002C8AF2 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B2CEB290DA143002C8AF2 /* Protocols */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1E8B2CEB290DA143002C8AF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B2CEC290DA159002C8AF2 /* SceneFactoryProtocol.swift */,
+				1E8B2CEE290DA3C4002C8AF2 /* ViewCode.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		430C59043FBC7E099DDEF6E9 /* Pods */ = {
@@ -383,9 +417,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8B2CE0290D7795002C8AF2 /* Strings+Generated.swift in Sources */,
-				1E258857290D60DE00822A7C /* HomeViewController.swift in Sources */,
+				1E8B2CF3290DA5D8002C8AF2 /* TabBarProtocols.swift in Sources */,
+				1E8B2CED290DA159002C8AF2 /* SceneFactoryProtocol.swift in Sources */,
+				1E8B2CEF290DA3C4002C8AF2 /* ViewCode.swift in Sources */,
+				1E258857290D60DE00822A7C /* TabBarViewController.swift in Sources */,
+				1E8B2CE7290DA0C7002C8AF2 /* TabBarController.swift in Sources */,
 				1E258853290D60DE00822A7C /* AppDelegate.swift in Sources */,
+				1E8B2CE9290DA11A002C8AF2 /* TabBarConfigurator.swift in Sources */,
 				1E258855290D60DE00822A7C /* SceneDelegate.swift in Sources */,
+				1E8B2CF1290DA5BD002C8AF2 /* TabBarView.swift in Sources */,
 				1E8B2CD8290D7308002C8AF2 /* XCAssets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

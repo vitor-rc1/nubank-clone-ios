@@ -1,2 +1,3 @@
-# nubank-clone-ios
-Nubank app clone
+# Nubank clone iOS
+
+## Introduction
