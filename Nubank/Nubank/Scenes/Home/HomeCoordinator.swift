@@ -18,6 +18,16 @@ class HomeCoordinator: Coordinator {
     }
 
     func start() {
+        goToHome()
+    }
+}
 
+extension HomeCoordinator: HomeNavigation {
+    func goToHome() {
+        let homeController = HomeController()
+        let homeView = HomeView()
+        let homeViewController = HomeViewController(homeView: homeView, controller: homeController)
+        homeController.delegate = homeViewController
+        navigationController.pushViewController(homeViewController, animated: true)
     }
 }
