@@ -35,7 +35,9 @@ final class TabBarCoordinator: Coordinator {
 
         switch page {
         case .home:
-            print("home")
+            let homeCoordinator = HomeCoordinator(navigationController: navController)
+            homeCoordinator.parentCoordinator = self
+            homeCoordinator.start()
         case .investments:
             print("investments")
         case .cashback:
