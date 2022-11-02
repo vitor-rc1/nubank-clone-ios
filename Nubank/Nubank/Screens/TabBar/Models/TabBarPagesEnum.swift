@@ -23,15 +23,4 @@ enum TabBarPagesEnum: Int {
             return UITabBarItem(tabBarSystemItem: .contacts, tag: self.rawValue)
         }
     }
-
-    var navigationController: UINavigationController {
-        switch self {
-        case .home:
-            return UINavigationController()
-        case .investments:
-            return UINavigationController()
-        case .cashback:
-            return UINavigationController()
-        }
-    }
 }
