@@ -37,6 +37,7 @@ final class TabBarCoordinator: Coordinator {
         case .home:
             let homeCoordinator = HomeCoordinator(navigationController: navController)
             homeCoordinator.parentCoordinator = self
+            children.append(homeCoordinator)
             homeCoordinator.start()
         case .investments:
             print("investments")

@@ -22,6 +22,9 @@
 		1EB782E92912ECEB003F4133 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782E82912ECEB003F4133 /* Coordinator.swift */; };
 		1EB782EB2912ED31003F4133 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782EA2912ED31003F4133 /* AppCoordinator.swift */; };
 		1EB782ED2912F739003F4133 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782EC2912F739003F4133 /* HomeCoordinator.swift */; };
+		1EB782F02912F94C003F4133 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782EF2912F94C003F4133 /* AppCoordinatorTests.swift */; };
+		1EB782F32912F9C2003F4133 /* NavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782F22912F9C2003F4133 /* NavigationControllerSpy.swift */; };
+		1EB782F5291303D5003F4133 /* TabBarCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782F4291303D5003F4133 /* TabBarCoordinatorTests.swift */; };
 		27B037E685CA10B8C089A819 /* Pods_Nubank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130AF0A35D9A53CEEC623E16 /* Pods_Nubank.framework */; };
 		293670B07C26CD27DA4588D2 /* Pods_NubankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2E364C52E3989A6F7529F7 /* Pods_NubankTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		1EB782E82912ECEB003F4133 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1EB782EA2912ED31003F4133 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1EB782EC2912F739003F4133 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		1EB782EF2912F94C003F4133 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		1EB782F22912F9C2003F4133 /* NavigationControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerSpy.swift; sourceTree = "<group>"; };
+		1EB782F4291303D5003F4133 /* TabBarCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorTests.swift; sourceTree = "<group>"; };
 		32B9015D20A857C20E57D3B3 /* Pods-NubankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.debug.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3774860613A0295F7F408560 /* Pods-Nubank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nubank.debug.xcconfig"; path = "Target Support Files/Pods-Nubank/Pods-Nubank.debug.xcconfig"; sourceTree = "<group>"; };
 		3F9F094E16F8C6FD97880671 /* Pods-NubankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.release.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 		1E258868290D60DF00822A7C /* NubankTests */ = {
 			isa = PBXGroup;
 			children = (
+				1EB782F12912F98F003F4133 /* Doubles */,
+				1EB782EE2912F92B003F4133 /* Application */,
 				1E82F78C290F00FF00F7E5CB /* Scenes */,
 			);
 			path = NubankTests;
@@ -143,6 +151,8 @@
 		1E82F78E290F010C00F7E5CB /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				1EB782F6291309BC003F4133 /* Models */,
+				1EB782F4291303D5003F4133 /* TabBarCoordinatorTests.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -237,6 +247,29 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		1EB782EE2912F92B003F4133 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1EB782EF2912F94C003F4133 /* AppCoordinatorTests.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1EB782F12912F98F003F4133 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				1EB782F22912F9C2003F4133 /* NavigationControllerSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		1EB782F6291309BC003F4133 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		430C59043FBC7E099DDEF6E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +347,7 @@
 					};
 					1E258864290D60DF00822A7C = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = 1E25884E290D60DE00822A7C;
 					};
 				};
@@ -467,6 +501,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB782F5291303D5003F4133 /* TabBarCoordinatorTests.swift in Sources */,
+				1EB782F32912F9C2003F4133 /* NavigationControllerSpy.swift in Sources */,
+				1EB782F02912F94C003F4133 /* AppCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,15 +723,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49VTWBV22B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vitor.conceicao.NubankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nubank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nubank";
@@ -707,11 +751,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 49VTWBV22B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vitor.conceicao.NubankTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
