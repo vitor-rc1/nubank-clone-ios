@@ -30,6 +30,7 @@
 		1EB7830029130C20003F4133 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB782FF29130C20003F4133 /* HomeView.swift */; };
 		1EB7830229130C2F003F4133 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7830129130C2F003F4133 /* HomeViewController.swift */; };
 		1EB7830529130D11003F4133 /* HomeCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB7830429130D11003F4133 /* HomeCoordinatorTests.swift */; };
+		1ED0176B2917077500275FB1 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED0176A2917077500275FB1 /* HomeHeaderView.swift */; };
 		27B037E685CA10B8C089A819 /* Pods_Nubank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130AF0A35D9A53CEEC623E16 /* Pods_Nubank.framework */; };
 		293670B07C26CD27DA4588D2 /* Pods_NubankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2E364C52E3989A6F7529F7 /* Pods_NubankTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		1EB782FF29130C20003F4133 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1EB7830129130C2F003F4133 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1EB7830429130D11003F4133 /* HomeCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorTests.swift; sourceTree = "<group>"; };
+		1ED0176A2917077500275FB1 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		32B9015D20A857C20E57D3B3 /* Pods-NubankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.debug.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3774860613A0295F7F408560 /* Pods-Nubank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nubank.debug.xcconfig"; path = "Target Support Files/Pods-Nubank/Pods-Nubank.debug.xcconfig"; sourceTree = "<group>"; };
 		3F9F094E16F8C6FD97880671 /* Pods-NubankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NubankTests.release.xcconfig"; path = "Target Support Files/Pods-NubankTests/Pods-NubankTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 		1ED017692916FC0E00275FB1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1ED0176A2917077500275FB1 /* HomeHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				1EB782FE29130C07003F4133 /* HomeController.swift in Sources */,
 				1E82F791290F0F2900F7E5CB /* TabBarPagesEnum.swift in Sources */,
 				1EB7830229130C2F003F4133 /* HomeViewController.swift in Sources */,
+				1ED0176B2917077500275FB1 /* HomeHeaderView.swift in Sources */,
 				1E8B2CEF290DA3C4002C8AF2 /* ViewCode.swift in Sources */,
 				1EB782F829130B29003F4133 /* HomeProtocols.swift in Sources */,
 				1EB782EB2912ED31003F4133 /* AppCoordinator.swift in Sources */,

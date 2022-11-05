@@ -25,7 +25,10 @@ final class TabBarCoordinator: Coordinator {
 
         let controllers: [UINavigationController] = tabBarPages.map({ getTabController($0) })
         let tabBarController = UITabBarController()
+
+        tabBarController.tabBar.tintColor = UIColor(asset: Asset.Colors.nuPurple)
         tabBarController.setViewControllers(controllers, animated: true)
+
         navigationController.pushViewController(tabBarController, animated: true)
     }
 

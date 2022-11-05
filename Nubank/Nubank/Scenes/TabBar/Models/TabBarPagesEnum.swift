@@ -16,11 +16,15 @@ enum TabBarPagesEnum: Int {
     var tabBarItem: UITabBarItem {
         switch self {
         case .home:
-            return UITabBarItem(tabBarSystemItem: .bookmarks, tag: self.rawValue)
+            return setupTabBarItem(imageName: "arrow.up.arrow.down")
         case .investments:
-            return UITabBarItem(tabBarSystemItem: .history, tag: self.rawValue)
+            return setupTabBarItem(imageName: "dollarsign")
         case .cashback:
-            return UITabBarItem(tabBarSystemItem: .contacts, tag: self.rawValue)
+            return setupTabBarItem(imageName: "bag")
         }
+    }
+
+    private func setupTabBarItem(imageName: String) -> UITabBarItem {
+        return UITabBarItem(title: nil, image: UIImage(systemName: imageName), tag: rawValue)
     }
 }
