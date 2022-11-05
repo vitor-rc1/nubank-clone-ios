@@ -32,5 +32,25 @@ final class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeControllerDelegate {
-    
+
+}
+
+extension HomeViewController: UITableViewDelegate {
+
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "teste"
+        return cell
+    }
 }
