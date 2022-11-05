@@ -217,8 +217,8 @@
 		1E8B2CE2290D787B002C8AF2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1EB782E62912BAF8003F4133 /* Home */,
 				1E8B2CEA290DA13C002C8AF2 /* Commons */,
+				1EB782E62912BAF8003F4133 /* Home */,
 				1E8B2CE3290D7881002C8AF2 /* TabBar */,
 			);
 			path = Scenes;
@@ -258,6 +258,7 @@
 				1EB782F729130B29003F4133 /* HomeProtocols.swift */,
 				1EB782FF29130C20003F4133 /* HomeView.swift */,
 				1EB7830129130C2F003F4133 /* HomeViewController.swift */,
+				1ED017692916FC0E00275FB1 /* Components */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +292,13 @@
 				1EB7830429130D11003F4133 /* HomeCoordinatorTests.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		1ED017692916FC0E00275FB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		430C59043FBC7E099DDEF6E9 /* Pods */ = {

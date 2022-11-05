@@ -32,7 +32,7 @@ final class TabBarCoordinator: Coordinator {
     private func getTabController(_ page: TabBarPagesEnum) -> UINavigationController {
         let navController = UINavigationController()
         navController.tabBarItem = page.tabBarItem
-
+        navController.navigationBar.isHidden = true
         switch page {
         case .home:
             let homeCoordinator = HomeCoordinator(navigationController: navController)
