@@ -28,6 +28,8 @@ extension HomeCoordinator: HomeNavigation {
         let homeView = HomeView()
         let homeViewController = HomeViewController(homeView: homeView, controller: homeController)
         homeController.delegate = homeViewController
+        homeView.delegate = homeViewController
+        homeView.dataSource = homeViewController
         navigationController.pushViewController(homeViewController, animated: true)
     }
 }
