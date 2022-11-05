@@ -18,9 +18,11 @@ final class NavigationControllerSpy: UINavigationController {
         self.viewControllerPassed = viewController
     }
 
-    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+    override func present(_ viewControllerToPresent: UIViewController,
+                          animated flag: Bool,
+                          completion: (() -> Void)? = nil) {
         presentDidCalled = true
         self.viewControllerPassed = viewControllerToPresent
     }
-    
+
 }

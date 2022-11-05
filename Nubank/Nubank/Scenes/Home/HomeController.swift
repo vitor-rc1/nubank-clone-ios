@@ -12,5 +12,5 @@ final class HomeController {
 }
 
 extension HomeController: HomeControllerProtocol {
-    
+
 }
