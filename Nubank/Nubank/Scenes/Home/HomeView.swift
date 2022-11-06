@@ -11,7 +11,7 @@ final class HomeView: UITableView {
 
     private lazy var headerView: UITableViewHeaderFooterView = {
         let headerView = HomeHeaderView(reuseIdentifier: homeHeaderReuseIdentifier)
-        headerView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        headerView.frame = CGRect(x: 0, y: 0, width: 0, height: 180)
         return headerView
     }()
 
